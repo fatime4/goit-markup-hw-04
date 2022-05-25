@@ -5,6 +5,7 @@
 /* текст контактов rgba(255, 255, 255, 0.6) */
 /* рамка хедера #ececec */
 /* рамка карток в портфоліо #EEEEEE */
+/* Колір іконок звичайний #AFB1B8 */
 
 /* Стили для index*/
 
@@ -17,6 +18,7 @@
   --accent-hover-color: #188ce8;
   --header-border-color: #ececec;
   --portfolio-cards-border: #eeeeee;
+  --icon-current-color: #afb1b8;
 }
 
 body {
@@ -167,6 +169,25 @@ img {
   margin-left: 330px;
 }
 
+/* .list-item.mail {
+  display: inline-block;
+  padding: 0;
+  color: var(--primary-text-color);
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.contact-link.mail::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(//images/icons.svg#icon-envelope);
+} */
+
 .nav-link.contact-link {
   color: var(--primary-text-color);
 }
@@ -190,6 +211,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
+/* .hero {
+  background-image: url(../images/hero-img.jpg);
+  background-position: center;
+  background-size: 1200px, cover;
+} */
 
 .baner-button {
   color: var(--primary-white-color);
@@ -299,6 +326,68 @@ img {
   border-left: 1px solid var(--portfolio-cards-border);
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-current-color);
+}
+
+.socials-link:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+/* Постійні клієнти */
+
+.clients {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-current-color);
+  border: 1px solid var(--icon-current-color);
+  border-radius: 5px;
+}
+
+.clients-link:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+  background-size: contain;
+}
+
 /* Футер */
 
 .footer {
@@ -340,6 +429,37 @@ img {
 .contact-link:focus {
   color: var(--accent-color);
 }
+
+.footer-socials {
+  display: inline-block;
+  margin-left: 70px;
+  position: absolute;
+  width: 206px;
+}
+
+.footer-title {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer .socials {
+  margin-top: 20px;
+}
+
+.footer .socials-link {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .socials-link:hover {
+  background-color: var(--accent-color);
+}
+
 /* Стили для портфолио */
 
 .portfolio-box {
