@@ -85,6 +85,7 @@ img {
 
 .nav-container .contact-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -169,24 +170,22 @@ img {
   margin-left: 330px;
 }
 
-/* .list-item.mail {
+.mail {
   display: inline-block;
-  padding: 0;
-  color: var(--primary-text-color);
-}
-
-.icon-envelope {
-  width: 16px;
-  height: 12px;
-}
-
-.contact-link.mail::before {
-  content: '';
+  fill: currentColor;
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(//images/icons.svg#icon-envelope);
-} */
+  background-size: contain;
+}
+
+.phone {
+  display: inline-block;
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
 
 .nav-link.contact-link {
   color: var(--primary-text-color);
@@ -208,15 +207,20 @@ img {
 
 .baner {
   background-color: #2f303a;
+}
+
+.baner > .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-/* .hero {
-  background-image: url(../images/hero-img.jpg);
+.hero {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  max-width: 1600px;
   background-position: center;
-  background-size: 1200px, cover;
-} */
+  background-size: cover;
+}
 
 .baner-button {
   color: var(--primary-white-color);
@@ -259,6 +263,13 @@ img {
 
 .section-box > .section-item:last-child {
   margin-right: 0px;
+}
+
+.benefits-icon-box {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--primary-background-color);
 }
 
 .portfolio-item {
@@ -396,6 +407,10 @@ img {
   padding-bottom: 60px;
 }
 
+.footer .container {
+  display: flex;
+}
+
 .footer .logo {
   color: var(--primary-white-color);
   padding: 0;
@@ -433,7 +448,7 @@ img {
 .footer-socials {
   display: inline-block;
   margin-left: 70px;
-  position: absolute;
+  padding-top: 12px;
   width: 206px;
 }
 
@@ -441,7 +456,7 @@ img {
   color: var(--primary-white-color);
 
   font-weight: 700;
-
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -503,6 +518,14 @@ img {
 .filter-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.poftfolio-list .section-item:hover {
+  border: 1px solid #eeeeee inset;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-cards {
